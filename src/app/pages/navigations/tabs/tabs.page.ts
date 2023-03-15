@@ -8,7 +8,7 @@ import { IonicModule } from '@ionic/angular';
   styleUrls: ['tabs.page.scss'],
   imports: [
     IonicModule,
-    CommonModule,
+    CommonModule
   ],
   standalone: true
 })

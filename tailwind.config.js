@@ -6,5 +6,5 @@ module.exports = {
       pretendard: "Pretendard",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

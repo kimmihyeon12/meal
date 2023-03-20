@@ -13,12 +13,20 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/login/login.page').then(m => m.LoginPage)
   },
   {
-    path: '',
-    loadChildren: () => import('./pages/navigations/tabs/tabs.routes').then(m => m.routes)
+    path: 'navs',
+    loadChildren: () => import('./pages/navs/navs.routes').then(m => m.routes)
+  },
+  {
+    path: 'profile-update',
+    loadComponent: () => import('./pages/modal/profile-update/profileUpdate.page').then(m => m.ProfileUpdatePage)
+  },
+  {
+    path: 'board-add',
+    loadComponent: () => import('./pages/modal/board-add/boardAdd.page').then(m => m.BoardAddPage)
   },
   {
     path: '',
-    redirectTo: 'splash',
+    redirectTo: 'navs',
     pathMatch: 'full'
   },
 ];

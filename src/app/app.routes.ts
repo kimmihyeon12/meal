@@ -25,8 +25,20 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/modal/board-add/boardAdd.page').then(m => m.BoardAddPage)
   },
   {
+    path: 'search',
+    loadComponent: () => import('./pages/modal/search/search.page').then(m => m.SearchPage)
+  },
+  {
+    path: 'search-detail',
+    loadComponent: () => import('./pages/modal/search-detail/searchDetail.page').then(m => m.SearchDetailPage)
+  },
+  {
+    path: 'recipe-add',
+    loadComponent: () => import('./pages/modal/recipe-add/recipeAdd.page').then(m => m.RecipeAddPage)
+  },
+  {
     path: '',
-    redirectTo: 'navs',
+    redirectTo: 'splash',
     pathMatch: 'full'
   },
 ];

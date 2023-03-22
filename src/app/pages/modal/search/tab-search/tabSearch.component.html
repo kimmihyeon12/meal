@@ -1,0 +1,16 @@
+<div class="px-4 relative">
+  <input type="text"
+    class="mt-2 border border-gray-200 text-gray-500 placeholder-gray-400 text-xs font-[400] py-2.5 w-full px-4 rounded-md"
+    placeholder="음식명을 입력해주세요">
+  <div class="absolute top-[17px] right-6">
+    <img class="h-5 w-5" src="assets/icon/roundcancel.svg" />
+  </div>
+</div>
+<div class="pt-4">
+  <ng-container *ngFor="let item of list">
+    <div class="flex py-3 border-b px-6 border-[#F1F1F1]">
+      <img src="assets/icon/search.svg" />
+      <p class="pl-2 text-xs font-[500] text-[#646464]">{{item}}</p>
+    </div>
+  </ng-container>
+</div>

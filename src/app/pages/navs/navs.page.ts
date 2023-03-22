@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EnvironmentInjector } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
@@ -13,7 +14,6 @@ import { IonicModule } from '@ionic/angular';
   standalone: true
 })
 export class NavsPage {
-
-  constructor(public environmentInjector: EnvironmentInjector) { }
+  constructor(public environmentInjector: EnvironmentInjector, private route: ActivatedRoute) { }
 
 }

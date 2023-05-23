@@ -11,7 +11,8 @@ declare var particlesJS: any;
   styleUrls: ['navHome.page.scss'],
   imports: [IonicModule, CommonModule, RouterLink],
   providers: [NavParams],
-  standalone: true
+  standalone: true,
+
 })
 export class NavHomePage {
   sliders: any = ["1", "2", "3", "4"]

@@ -1,5 +1,5 @@
 <div class="w-full h-screen">
-  <div class="w-full flex justify-end">
+  <div class="flex justify-end w-full">
     <img src="assets/img/round2.png" class="h-[14vh]">
   </div>
   <div class="w-full flex justify-between pt-[25vh] ">
@@ -15,26 +15,29 @@
   </div>
 </div>
 
-<div class="text-sm w-full px-7 py-4 absolute h-screen flex items-end">
+<div class="absolute flex items-end w-full h-screen py-4 text-sm px-7">
   <div class="w-full">
     <div class="font-[600]">
-      <div class="w-full flex justify-end">
+      <div id="naverLogin">
+
+      </div>
+      <div class="flex justify-end w-full">
         <img src="assets/img/emo1.png" class="h-[100px]" />
       </div>
-      <div
+      <div (click)="socialLoginService.loginWithKakao()"
         class="flex w-full justify-center bg-[#F7E600] py-3 rounded-[10px] shadow-[1px_2px_2px_0px_rgba(0,0,0,0.25)]">
-        <img src="assets/img/kakaologo.svg" />
+        <img src="assets/icon/kakaologo.svg" />
         <p class="pl-2">카카오로 시작하기</p>
       </div>
-      <div
+      <div (click)="socialLoginService.loginWithNaver()"
         class="flex w-full justify-center bg-[#2DB400] py-3 rounded-[10px] mt-3 shadow-[1px_2px_2px_0px_rgba(0,0,0,0.25)]">
-        <img src="assets/img/naverlogo.svg" />
+        <img src="assets/icon/naverlogo.svg" />
         <p class="pl-2 text-white">네이버로 시작하기</p>
       </div>
-      <div
-        class="flex w-full justify-center bg-black py-3 rounded-[10px] mt-3 shadow-[1px_2px_2px_0px_rgba(0,0,0,0.25)]">
-        <img src="assets/img/applelogo.svg" />
-        <p class="pl-2 text-white">Apple로 시작하기</p>
+      <div (click)="socialLoginService.loginWithGoogle()"
+        class="flex w-full justify-center bg-white py-3 rounded-[10px] mt-3 shadow-[1px_2px_2px_0px_rgba(0,0,0,0.25)] border">
+        <img src="assets/icon/googlelogo.svg" />
+        <p class="pl-2 ">Google로 시작하기</p>
       </div>
     </div>
     <div class="pt-4 text-xs text-[#D2D2D2] flex w-full justify-center">

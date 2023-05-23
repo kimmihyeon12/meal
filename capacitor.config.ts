@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'ionic-angular-standalone',
+  appId: 'com.hohocompany.meal-log',
+  appName: '식사기록부',
   webDir: 'www',
   bundledWebRuntime: false
 };

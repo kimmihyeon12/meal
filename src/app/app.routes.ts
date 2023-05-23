@@ -29,7 +29,7 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/modal/search/search.page').then(m => m.SearchPage)
   },
   {
-    path: 'search-detail',
+    path: 'search-detail/:id',
     loadComponent: () => import('./pages/modal/search-detail/searchDetail.page').then(m => m.SearchDetailPage)
   },
   {
@@ -38,7 +38,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'splash',
+    redirectTo: '/login',
     pathMatch: 'full'
   },
 ];

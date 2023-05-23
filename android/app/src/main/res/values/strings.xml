@@ -4,4 +4,6 @@
     <string name="title_activity_main">ionic-angular-standalone</string>
     <string name="package_name">io.ionic.starter</string>
     <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="app_name">meal-log</string>
+    <string name="kakao_app_key">e261c9b16d4e9c1989bd8959c4f0dc4d</string>
 </resources>
